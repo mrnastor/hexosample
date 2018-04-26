@@ -1,5 +1,6 @@
 ---
 title: Family
+tags: family
 ---
 
 Where everything starts!
