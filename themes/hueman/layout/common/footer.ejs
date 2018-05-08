@@ -2,12 +2,27 @@
     <div class="container">
         <div class="container-inner">
             <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
-            <div class="credit">
-                <h1 class="logo-wrap">
-                    <a href="<%- url_for() %>" class="logo"></a>
-                </h1>
-                <p>&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %></p>
-                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            <div>
+                <div class="credit">
+                    <h1 class="logo-wrap">
+                        <a href="<%- url_for() %>" class="logo"></a>
+                    </h1>
+                    <p>&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %></p>
+                    <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+                </div>
+                <!-- Begin MailChimp Signup Form -->
+                <div id="mc_embed_signup">
+                <form action="https://netlify.us18.list-manage.com/subscribe/post?u=e440550cbc91fb10a02f5e3c4&amp;id=e9a266a0bd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                    <label for="mce-EMAIL">Subscribe to my mailing list</label>
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="brennus@gwapo.com" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e440550cbc91fb10a02f5e3c4_e9a266a0bd" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                    </div>
+                </form>
+                </div>
+                <!--End mc_embed_signup-->
             </div>
         </div>
     </div>
